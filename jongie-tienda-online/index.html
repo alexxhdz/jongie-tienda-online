@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Jongie</title>
+    <link rel="stylesheet" href="/SCSS/styles.css">
+    <link rel="shortcut icon" href="/IMG/Logo/Icono.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+        <img src="/IMG/Logo/Icono.png" alt="Logo de la tienda">
+        <h2>JONGIE</h2>
+        <a href="">Saber mas</a>
+    </main>
+
+    <header>
+        <div class="logo">
+            <img src="/IMG/Logo/Icono.png" alt="Logo de la tienda JONGIE">
+            <h2>Tienda Online</h2>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#productos">Catalogo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div id="productos" class="container">
+        <h2>Nuestros productos</h2>
+        <div class="products" id="products-container">
+            <!-- Los productos se cargarán aquí dinámicamente usando JavaScript -->
+        </div>
+    </div>
+
+    <section id="contacto" class="contacto">
+        <form action="procesar_formulario.php" method="post">
+            <h2>Contactanos</h2>
+            <input placeholder="Nombre: " type="text" id="nombre" name="nombre" required>
+
+            <input placeholder="Correo: " type="email" id="correo" name="correo" required>
+
+            <textarea placeholder="Escribe tu solicitud aqui: " id="mensaje" name="mensaje" rows="4"
+                required></textarea>
+
+            <input class="btnn" type="submit" value="Enviar">
+        </form>
+        <div class="form-derecha">
+            <img src="/IMG/Tienda.png" alt="Tienda en linea">
+        </div>
+    </section>
+
+    <footer>
+        <div class="cont-foot">
+            <div class="WhatsApp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <p>Comprar un producto a través de WhatsApp en tiendas como Jongie es una elección acertada por diversas
+                    razones. En primer lugar, la comodidad que ofrece este método de compra es insuperable. Puedes hacer
+                    tus compras desde la comodidad de tu hogar, evitando largas filas y desplazamientos innecesarios a
+                    tiendas físicas.</p>
+            </div>
+            <div class="Envio">
+                <ion-icon name="albums-outline"></ion-icon>
+                <p>Jongie es una excelente opción de compra gracias a su amplia variedad de productos, precios
+                    competitivos, calidad garantizada, envío rápido y servicio al cliente excepcional. Elegir Jongie te
+                    asegura una experiencia de compra en línea satisfactoria y conveniente.</p>
+            </div>
+            <div class="Seguridad">
+                <ion-icon name="key-outline"></ion-icon>
+                <p>Comprar en Jongie es seguro debido a sus avanzados protocolos de seguridad, sistemas de pago
+                    confiables y políticas transparentes de privacidad. Puedes realizar tus compras en línea con
+                    tranquilidad, sabiendo que tus datos y transacciones están protegidos.</p>
+
+            </div>
+        </div>
+        <p>© 2023 Jongie. Todos los derechos reservados. </p>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
